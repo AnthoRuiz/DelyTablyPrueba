@@ -63,8 +63,15 @@ class ContentController extends Controller
             $Content->author = Auth::user()->name;
             $Content->category_id = $category->id;
             $Content->user_id = Auth::id();
-            $Content->save();
-            return redirect()->route('home')->withErrors('Contenido Creado');
+            if($Content->publishing_date < $Content->exp_date){
+                $Content->save();
+                return redirect()->route('home')->withErrors('Contenido Creado');
+            }else{
+                return redirect()->route('product_store_path')
+                    ->withInput()
+                    ->withErrors('La Fecha de creación debe ser MENOR que la fecha de Vencimiento');
+            }
+
         }
     }
 

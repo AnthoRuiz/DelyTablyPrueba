@@ -2,10 +2,12 @@
 
 namespace future\Http\Controllers;
 
+use Carbon\Carbon;
 use future\Content;
 use Illuminate\Http\Request;
 use future\Http\Requests;
 use future\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -14,10 +16,19 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
+
+
     public function index()
     {
-        $contents = Content::with(['userPost','categoryContent'])->get();
-        //dd($contents);
+
+        //$contents = Content::with(['userPost','categoryContent'])->get();
+        $fechaNow = Carbon::now('America/Bogota');
+        ///dd($fechaNow);
+        $contents = Content::where('exp_date', '>=', $fechaNow)->get();
+
         return view('home', ['contents' => $contents]);
     }
 

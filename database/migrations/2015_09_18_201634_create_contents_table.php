@@ -17,8 +17,8 @@ class CreateContentsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('description');
-            $table->timestamp('publishing_date');
-            $table->timestamp('exp_date');
+            $table->dateTime('publishing_date');
+            $table->dateTime('exp_date');
             $table->string('author');
             $table->integer('category_id');
             $table->integer('user_id');
