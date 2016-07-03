@@ -8,6 +8,10 @@ Esta apliacaión esta realizada con el lenguaje PHP bajo el framework Laravel en
 
 ## Documentación de los Servicios
 
+### Datos de la cuenta con perfil Moderador
+Correo: anthony@eejemplo.com
+clave: 19525295
+
 Los servicios están protegidos por el siguiente api-key: 32m$2y$10$48Fq6EoB1fmM71P3lcdDKOIJgIBuNR0OytD7iNQLxRCYkY8P4/wMy
 por consiguiente se deben agregar en el Headers ejemplo:
 
