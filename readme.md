@@ -1,6 +1,6 @@
 ## Prueba Dely Tably
 
-### Link de la aplicacion: https://google.com
+### Link de la aplicacion: 
 ### Link de los servicios en POSTMAN: https://www.getpostman.com/collections/f2ab0b2829e388f08500
 
 Aplicación de Prueba de la empresa Dely Tably,
