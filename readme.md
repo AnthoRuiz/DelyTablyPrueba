@@ -1,6 +1,6 @@
 ## Prueba Dely Tably
 
-[![Build Status](https://google.com)]
+[![Build Status]](https://google.com)
 
 Aplicación de Prueba de la empresa Dely Tably,
 
