@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: future
+        psr4_prefix: future
+        src_path: app
