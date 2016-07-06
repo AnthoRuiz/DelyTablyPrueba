@@ -5,7 +5,7 @@
 Aplicación de Prueba de la empresa Dely Tably,
 
 Esta apliacaión esta realizada con el lenguaje PHP bajo el framework Laravel en su version 5.1
-
+3
 ## Documentación de los Servicios
 
 Los servicios están protegidos por el siguiente api-key: 32m$2y$10$48Fq6EoB1fmM71P3lcdDKOIJgIBuNR0OytD7iNQLxRCYkY8P4/wMy

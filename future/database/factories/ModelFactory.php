@@ -11,6 +11,8 @@
 |
 */
 
+
+
 $factory->define(future\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
@@ -20,19 +22,9 @@ $factory->define(future\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(future\Content::class, function (Faker\Generator $faker) {
-    return [
-        'title'        => $faker->title,
-        'description' => $faker->text(40),
-        'publishing_date'       => $faker->dateTimeBetween(['-1 years'],['now']),
-        'exp_date'       => $faker->dateTimeBetween(['-4 years'],['now']),
-        'author'        => $faker->name,
-    ];
-});
-
 
 $factory->define(future\Category::class, function (Faker\Generator $faker) {
     return [
-        'name'        => $faker->name,
+        'name' => $faker->name,
     ];
 });
